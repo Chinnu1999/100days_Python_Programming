@@ -1,63 +1,89 @@
-# PYTHON PROGRAMMING - DAY_1
+                                                                     # Python Programming
+                                                                           # Day-1
 
-print("Hello World!") #print hello world!
+print("Hello Ayyappan!..")   #printing  hello
+# print is used to printing the data given by the user
+# " " is used to remove unwanted spaces in strings
 
-#-------------------------------
+# -> Use stackoverflow to get answer for your errors in program
 
-#print the given statement exactly without any change
+                              # Excercise - 1
+
+# Write a program in main.py that prints the same notes from the previous lesson using what you have learnt about the Python print function.
+
+# Expected Output:
+
+# Day 1 - Python Print Function
+# The function is declared like this:
+# print('what to print')
+
+# Answer:
+
 print("Day 1 - Python Print Function")
-print('The function is declared like this: ')
-print("print('What to print')")  # here we can use [" ' ' "]
+print( "The function is declared like this:")
+print("print('what to print')")
 
-#-------------------------------
+#----------------------------------------------------------
 
-#we have to give space between the hello & Chinnu
-print("Hello" + "Chinnu")
-print("Hello " + "Chinnu")      #step1 ("Hello ")
-print("Hello" + " Chinnu")      #step2 (" Chinnu")
-print("Hello" + " " + "Chinnu") # step3 (+ " " +)
+                           # String Manipulation
 
-#-------------------------------
+print("Hello World! \nHello world! ") # \n used to print the word 2 times without using print 2 times
 
-#Debug the code
-#-----------------#
-#print(Day 1 - String Manipulation")
-#print("String Concatenation is done with the "+" sign.)
-# print('e.g. print("Hello" + "World")')
-#print(("New lines can be created with a backslash and n.")
+# Concatenate
 
-# Correct answer 
-print("Day 1 - String Manipulation") # Missing double quotes before the word day. 
-print('String Concatenation is done with the "+" sign.') # Outer double quotes changed to single quotes.
-print('e.g. print("Hello" + "World")') # Extra identication removed.
-print("New lines can be created with a backslash and n.") # Extra ( in print function removed.
+print("Hello" + "Ayyappan") # there is space between hello and ayyappan
 
-#-------------------------------
+# adding space in 3 ways
+print("Hello" + " Ayyappan")  # or
+print("Hello " + "Ayyappan")  # or
+print("Hello" + " " + "Ayyappan") 
 
-# Asking input from the user
+                       # Excercise - 2       -> Debug the Code
+ 
+#Fix the code below 👇
 
-# Step-1
-print("Hello " + input("What's your name? ") + "!")   # Getting input from the user
+# print(Day 1 - String Manipulation")
+# print("String Concatenation is done with the "+" sign.")
+#   print('e.g. print("Hello " + "world")')
+# print(("New lines can be created with a backslash and n.")
 
-# Step-2
-x=input("What's your name? ")  # we assign variable to get input. The variable is X
-print(x)
+# Answer: 
 
-# Step-3
-x=input("What's your name? ") # we assign variable to get input. The variable is X
-print(x)
-print("Hello" + " " + x)
+print("Day 1 - String Manipulation")  # " is missing
+print('String Concatenation is done with the "+" sign.') # use single quote to avoid error
+print('e.g. print("Hello " + "world")') # avoid space at beginning (indentation error)
+print("New lines can be created with a backslash and n.") # remove ( at first.
 
-#-------------------------------
+#--------------------------------------------------------------
 
-x=input("What's your name? ") #Getting input from user
-print(len(x))  #calculate the length of the user's input
+                        # Python Input Function
 
-#-------------------------------
+print("Hello " + input("What is your name?"))  # getting input from a user
 
-#Variable
-name=input("What's your name? ")  # we assign variable to get input. The variable is X
+# Comment
+
+# ->  # is used to comment and python will not read the program you enter with #
+
+                             # Excercise -3 
+
+# Write a program that prints the number of characters in a user's name.
+
+# Answer:
+
+print(len("Ayyappan")) # or
+
+print(len(input("What is your name? ")))
+
+#--------------------------------------------------------------
+
+                           # Python Variables
+
+name = input("Enter your nice name here: ")  # here name is a variable
 print(name)
+
+name = input("Enter your nice name here: ")
+length=len(name)    # length is also a variable
+print(length)
 
 #print text in next line \n
 name = input("What is your name? ")
@@ -65,10 +91,13 @@ age = input("please enter your age: ")
 #print(name)
 #print(age)
 
-print("Your name is: \n" + name + "\n" + "Your age is: \n" + age)
+print("Your name is: " + name + "\n" + "Your age is: " + age)
 
+                               # Excercise - 4
 
-#------------Exercise------------#
+# Write a program that switches the values stored in the variables a and b.
+
+# Answer:
 
 # 🚨 Don't change the code below 👇
 a = input("a: ")
@@ -78,9 +107,9 @@ b = input("b: ")
 ####################################
 #Write your code below this line 👇
 
-x=a # create new variable and store a value in that
-a=b # store b value in a
-b=x # fix b value as newly created variable (that the x contain a value)
+c = a
+a = b
+b = c
 
 
 #Write your code above this line 👆
@@ -90,9 +119,4 @@ b=x # fix b value as newly created variable (that the x contain a value)
 print("a: " + a)
 print("b: " + b)
 
-#--------------Final_Excerise--------------#
-
-print("Welcome to the Band Name Generator.")
-city_name = input("What's name of the city you grew up in?\n" ) # (\n) is used to print the text in next line
-pet_name = input("What's your pet's name?\n")
-print("your band name could be " + city_name + " " + pet_name)
+#--------------------------------------------------------------
