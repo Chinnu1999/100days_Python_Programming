@@ -1,7 +1,12 @@
-# PYTHON PROGRAMMING - DAY_2
+                                # Python Programming 
+                                     # Day - 2
 
-# Data Types:-
-              # 1. Strings (just a character)
+# Python Primitive Data Types
+
+# Strings
+
+# " H E L L O "
+# [ 0 1 2 3 4 ]
 
 print("Hello World!" [0])    # Hello World!    
                               # 01234567891011  (Check the string character)
@@ -39,7 +44,9 @@ print(type(a))           # Tyoe denote which data type we use (Here its string)
 
 #-----------------------------------------------------------------------------------
 
-#Excercise
+# Exercise - 1
+
+# Write a program that adds the digits in a 2 digit number. e.g. if the input was 35, then the output should be 3 + 5 = 8
 
 # 🚨 Don't change the code below 👇
 two_digit_number = input("Type a two digit number: ")
@@ -85,26 +92,25 @@ print(3 * (3 + 3) / 3 -3 )   # Answer = 3
 
 #-------------------------------------------------------------------------------------
 
-#Excercise
+# Excercise - 2
+
+# Write a program that calculates the Body Mass Index (BMI) from a user's weight and height.
+
+# The BMI is calculated by dividing a person's weight (in kg) by the square of their height (in m):
+
+# Sample Input: weight=80, height = 1.75
 
 # 🚨 Don't change the code below 👇
 height = input("enter your height in m: ")
 weight = input("enter your weight in kg: ")
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+weight_in_integer = int(weight)
+height_in_float = float(height)
 
-weight_as_int = int(weight)
-height_as_float = float(height)
+bmi = weight_in_integer / (height_in_float * height_in_float)
+print(int(bmi))
 
-# Using the exponent operator **
-bmi = weight_as_int / height_as_float ** 2
-# or using multiplication and PEMDAS
-bmi = weight_as_int / (height_as_float * height_as_float)
-
-bmi_as_int = int(bmi)
-
-print(bmi_as_int)
 
 #-------------------------------------------------------------------------------------
 
@@ -133,19 +139,29 @@ print(f"your score is: {score}, your height is: {height}, your award is: {award}
 
 #-------------------------------------------------------------------------------------
 
-#Exercise
+
+# Excercie -3 
+
+# Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
+
+ # It will take your current age as the input and output a message with our time left in this format:
+
+# You have x days, y weeks, and z months left.
+
+# Sample Input: 56 and Sample Output: You have 12410 days, 1768 weeks, and 408 months left.
+
+# Answer:
 
 # 🚨 Don't change the code below 👇
-age = input("What is your current age?")
+age = input("What is your current age? ")
 # 🚨 Don't change the code above 👆
 
-#Write your code below this line 👇
+years = 90 -int(age)
+weeks = round(years*52)
+months = round(years*12)
+days = round(years*365)
 
-years = 90 - int(age)
-months = round(years * 12)
-weeks = round(years * 52)
-days = round(years * 365)
-print(f"You have {days} days, {weeks} weeks, and {months} months left.")
+print(f" you have {days} days, {weeks} weeks, {months} months left.")
 
 #----------------------------------------------------------------------------------------------------
 
