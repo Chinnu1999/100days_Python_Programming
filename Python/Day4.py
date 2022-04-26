@@ -1,23 +1,38 @@
-# Python Programming - Day 4
-print("Hello World !")
+# Python Programming
+# Day-4
 
-# Randomization
+# Randomization - (Random Module)
 
-import random   # importing module for printing random numbers
- 
-#printing random integres between 0 to 100
-a = random.randint(0,100)
-print(a)
+# printing random integers
+import random  # ->  it a module used to print random things
+random_integer = random.randint(1, 10)  # -> printing random number using randint[random integers]
+print(random_integer)
 
-# random() will print between 0.00000000 - 0.999999999.....
-b = random.random() 
-print(b)
+# printing random float number
+import random
+random_float = random.random() # random() will print between 0.00000000 - 0.999999999.....
+print(random_float)
 
-# create random decimal number between 0 and 5
-c = random.random() * 5
-print(c)
+# printing random decimal number
+import random
+random_decimal = random.uniform(0,5) 
+print(random_decimal)
+                      # (or)
+import random
+random_float = random.random()*5
+print(random_float)
 
-#------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------
+
+# we can generate random love score calculator
+
+import random
+love_score=random.randint(1,100)
+print(f"Your love score is {love_score}. ")
+
+#--------------------------------------------------------------------------------------------
+
+# Excercise - 1
 
 # Head or Tail Exercise
 
@@ -58,7 +73,12 @@ print(name1.split())    # its will make a list we provide in the name1 variable
 
 #------------------------------------------------------------------------------------------------------------------------
 
-# Hotel random food pay - Excercise
+# Excercise - 2 
+# Hotel random food pay
+
+#You are going to write a program which will select a random name from a list of names. The person selected will have to pay for everybody's food bill.
+
+# Answer:
 
 import random
 name = input("Enter all your friends name here: ") # getting input from user
@@ -69,6 +89,27 @@ rand_name = name[person_length]                    # print the name that choosen
 print(f"{rand_name} is going to buy a meal today!......")
 
 #----------------------------------------------------------------------------------------------------------------------
+
+# Index Error  with Nested List
+
+states_of_india = ["Tamilnadu", "Karnataka", "Kerela", "Mumbai", "Delhi"]
+
+india = len(states_of_india)
+print(states_of_india[india -1])
+
+#---------------------------------------------------------------------------------------------
+
+# Excercise - 3
+
+# You are going to write a program which will mark a spot with an X.
+
+# In the starting code, you will find a variable called map.
+
+# This map contains a nested list. When map is printed this is what the nested list looks like:
+
+# ['⬜️', '⬜️', '⬜️'],['⬜️', '⬜️', '⬜️'],['⬜️', '⬜️', '⬜️']
+
+
 # Treasure Map Excercise
 
 row1 = ["⬜️","⬜️","⬜️"]                                   # row 1
