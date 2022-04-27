@@ -31,3 +31,53 @@ turn_left()
 turn_left()
 
 #-------------------------------------------------------------------------------------------------------------------------------------
+
+# Excercise - 1 Hurdle Game
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def moving():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+moving()
+moving()
+moving()
+moving()
+moving()
+moving()
+
+
+                             # or
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def moving():
+    move()
+    turn_left()
+    move()
+    turn_right()
+    move()
+    turn_right()
+    move()
+    turn_left()
+
+for i in range(6):
+  moving()
+  
+#---------------------------------------------------------------------------------------
+
+
+
